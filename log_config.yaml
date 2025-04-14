@@ -1,0 +1,46 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  standard:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: ERROR
+    formatter: standard
+    stream: ext://sys.stdout
+
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: standard
+    filename: ecommerce.log
+    encoding: utf8
+
+loggers:
+  uvicorn:
+    handlers: [console, file]
+    level: DEBUG
+    propagate: False
+
+  uvicorn.error:
+    handlers: [console, file]
+    level: DEBUG
+    propagate: False
+
+  uvicorn.access:
+    handlers: [console, file]
+    level: DEBUG
+    propagate: False
+
+  __main__:
+    handlers: [console, file]
+    level: DEBUG
+    propagate: False
+
+root:
+  handlers: [console, file]
+  level: DEBUG
