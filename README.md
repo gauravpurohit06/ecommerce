@@ -2,6 +2,8 @@
 
 This project is a monolithic application structured with future microservice separation in mind. It contains two main domains:
 
+![Architecture Diagram](docs/architecture.png)
+
 🚀 Key Features
 * **Modular Design:** Clear separation of concerns within service and API layers, promoting maintainability and scalability.
 * **Containerized with Docker:** Utilizes multi-stage Docker builds optimized for production environments, ensuring consistent deployments.
