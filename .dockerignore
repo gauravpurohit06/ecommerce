@@ -1,0 +1,22 @@
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.db
+.env
+.git
+.gitignore
+.idea
+Dockerfile
+docker-compose.yml
+
+# Exclude test outputs and coverage reports
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Exclude IDE/editor configurations
+.vscode/
+.idea/
