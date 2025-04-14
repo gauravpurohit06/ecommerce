@@ -54,10 +54,13 @@ docker push your-registry/ecommerce-app
 
 Provision Infrastructure: Set up the necessary infrastructure on your cloud provider (e.g., compute instances, networking, databases).
 
-Deploy the Container: Use the cloud provider's services to deploy your Docker container. For example, on AWS:
+Deploy the Container: Utilize the cloud provider's container orchestration or management services to deploy the Docker container. Examples include:
 
-ECS: Use AWS Elastic Container Service to run your container.
-EKS: Use AWS Elastic Kubernetes Service for orchestration.
+AWS ECS (Elastic Container Service): For running containers at scale.
+AWS EKS (Elastic Kubernetes Service): For Kubernetes-based container orchestration.
+Google Cloud Run: For serverless container execution.
+Azure Container Instances (ACI) / Azure Kubernetes Service (AKS): Microsoft Azure's container services.
+
 
 Set Up Networking: Configure load balancers, security groups, and DNS settings to expose your application.
 
